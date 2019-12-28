@@ -46,7 +46,14 @@
 			<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
-				<version>3.2.1</version>
+			<!--	<version>3.2.1</version> -->
+				<properties>
+
+    <maven.compiler.source>1.8</maven.compiler.source>
+
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+  </properties>
 				<!-- https://jeremylong.github.io/DependencyCheck/dependency-check-maven/configuration.html -->
 				<configuration>
 					<!-- Generate all report formats -->
